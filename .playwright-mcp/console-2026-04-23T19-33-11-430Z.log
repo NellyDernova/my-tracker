@@ -1,0 +1,34 @@
+[     121ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:14337
+[   10086ms] [ERROR] The result of getSnapshot should be cached to avoid an infinite loop @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:4515
+[   10121ms] Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at getRootForUpdatedFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:2633:166)
+    at enqueueConcurrentRenderForLane (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:2623:11)
+    at forceStoreRerender (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:4581:15)
+    at updateStoreInstance (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:4563:36)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:12904:13)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:851:66)
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:6617:153)
+    at commitHookPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:6652:55)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:7618:22)
+    at recursivelyTraversePassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:7606:5)
+[   10117ms] [WARNING] %s
+
+%s
+ An error occurred in the <TaskCard> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:5257
+[   47863ms] Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at getRootForUpdatedFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:2633:166)
+    at enqueueConcurrentRenderForLane (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:2623:11)
+    at forceStoreRerender (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:4581:15)
+    at updateStoreInstance (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:4563:36)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:12904:13)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:851:66)
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:6617:153)
+    at commitHookPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:6652:55)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:7618:22)
+    at recursivelyTraversePassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:7606:5)
+[   47859ms] [WARNING] %s
+
+%s
+ An error occurred in the <TaskCard> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=84ecfdf8:5257

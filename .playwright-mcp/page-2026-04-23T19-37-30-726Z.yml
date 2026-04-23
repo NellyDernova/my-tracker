@@ -1,0 +1,76 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "✦ My Tracker" [ref=e5] [cursor=pointer]
+    - navigation [ref=e6]:
+      - link "📥 Inbox" [ref=e7] [cursor=pointer]:
+        - /url: /inbox
+      - link "🎯 Horizons" [ref=e8] [cursor=pointer]:
+        - /url: /horizons
+      - link "📅 Days" [ref=e9] [cursor=pointer]:
+        - /url: /days
+      - link "🗓 Weeks" [ref=e10] [cursor=pointer]:
+        - /url: /weeks
+      - link "📆 Years" [ref=e11] [cursor=pointer]:
+        - /url: /years
+      - link "🗒 Calendar" [ref=e12] [cursor=pointer]:
+        - /url: /calendar
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Projects
+        - button "+" [ref=e16] [cursor=pointer]
+      - link "💼 Работа" [ref=e19] [cursor=pointer]:
+        - /url: /project/c7b3yjlimobvv8fa
+        - generic [ref=e20]: 💼
+        - generic [ref=e21]: Работа
+    - link "⚙ Настройки" [ref=e23] [cursor=pointer]:
+      - /url: /settings
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - heading "Апрель 2026" [level=1] [ref=e26]
+      - generic [ref=e27]:
+        - button "‹" [ref=e28] [cursor=pointer]
+        - button "Сегодня" [ref=e29] [cursor=pointer]
+        - button "›" [ref=e30] [cursor=pointer]
+    - generic [ref=e31]:
+      - generic [ref=e32]: Пн
+      - generic [ref=e33]: Вт
+      - generic [ref=e34]: Ср
+      - generic [ref=e35]: Чт
+      - generic [ref=e36]: Пт
+      - generic [ref=e37]: Сб
+      - generic [ref=e38]: Вс
+      - generic [ref=e40]: "30"
+      - generic [ref=e42]: "31"
+      - generic [ref=e44]: "1"
+      - generic [ref=e46]: "2"
+      - generic [ref=e48]: "3"
+      - generic [ref=e50]: "4"
+      - generic [ref=e52]: "5"
+      - generic [ref=e54]: "6"
+      - generic [ref=e56]: "7"
+      - generic [ref=e58]: "8"
+      - generic [ref=e60]: "9"
+      - generic [ref=e62]: "10"
+      - generic [ref=e64]: "11"
+      - generic [ref=e66]: "12"
+      - generic [ref=e68]: "13"
+      - generic [ref=e70]: "14"
+      - generic [ref=e72]: "15"
+      - generic [ref=e74]: "16"
+      - generic [ref=e76]: "17"
+      - generic [ref=e78]: "18"
+      - generic [ref=e80]: "19"
+      - generic [ref=e82]: "20"
+      - generic [ref=e84]: "21"
+      - generic [ref=e86]: "22"
+      - generic [ref=e88]: "23"
+      - generic [ref=e90]: "24"
+      - generic [ref=e92]: "25"
+      - generic [ref=e94]: "26"
+      - generic [ref=e96]: "27"
+      - generic [ref=e98]: "28"
+      - generic [ref=e100]: "29"
+      - generic [ref=e102]: "30"
+      - generic [ref=e104]: "1"
+      - generic [ref=e106]: "2"
+      - generic [ref=e108]: "3"

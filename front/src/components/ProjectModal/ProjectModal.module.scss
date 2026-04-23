@@ -1,0 +1,158 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.badge {
+  font-size: 12px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: var(--text-muted);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--surface-2);
+  }
+}
+
+.emojiRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.bigEmoji {
+  font-size: 44px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+.emojiInputWrap {
+  flex: 1;
+
+  input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 15px;
+    background: var(--bg);
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+  }
+}
+
+.emojiHint {
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-top: 6px;
+
+  kbd {
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-family: inherit;
+  }
+}
+
+.nameInput {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  background: transparent;
+  margin-bottom: 4px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.descInput {
+  width: 100%;
+  min-height: 70px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  resize: vertical;
+  background: var(--bg);
+  font-size: 13px;
+  margin-bottom: 12px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+}
+
+.label {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+
+.emojiPicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.emojiButton {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: var(--surface-2);
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--accent-soft);
+  }
+
+  &.selected {
+    background: var(--accent);
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.spacer {
+  flex: 1;
+}

@@ -1,0 +1,39 @@
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.quickAdd {
+  margin-bottom: 16px;
+
+  input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+    background: var(--bg);
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.empty {
+  color: var(--text-muted);
+  padding: 30px;
+  text-align: center;
+}

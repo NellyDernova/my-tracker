@@ -1,0 +1,101 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+}
+
+.navBtn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  color: var(--text);
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--surface-2);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.dayName {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  padding: 6px 0;
+}
+
+.day {
+  min-height: 90px;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  &.other {
+    opacity: 0.45;
+  }
+
+  &.today {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+}
+
+.num {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+
+  .today & {
+    color: var(--accent);
+  }
+}
+
+.event {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  text-align: left;
+
+  &.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+
+  &:hover {
+    background: var(--accent);
+    color: white;
+  }
+}

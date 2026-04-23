@@ -1,0 +1,36 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "✦ My Tracker" [ref=e5] [cursor=pointer]
+    - navigation [ref=e6]:
+      - link "📥 Inbox" [ref=e7] [cursor=pointer]:
+        - /url: /inbox
+      - link "🎯 Horizons" [ref=e8] [cursor=pointer]:
+        - /url: /horizons
+      - link "📅 Days" [ref=e9] [cursor=pointer]:
+        - /url: /days
+      - link "🗓 Weeks" [ref=e10] [cursor=pointer]:
+        - /url: /weeks
+      - link "📆 Years" [ref=e11] [cursor=pointer]:
+        - /url: /years
+      - link "🗒 Calendar" [ref=e12] [cursor=pointer]:
+        - /url: /calendar
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Projects
+        - button "+" [ref=e16] [cursor=pointer]
+      - link "🎯 Тестовый проект" [ref=e108] [cursor=pointer]:
+        - /url: /project/h_G4z9RssgKo
+        - generic [ref=e109]: 🎯
+        - generic [ref=e110]: Тестовый проект
+    - link "⚙ Настройки" [ref=e18] [cursor=pointer]:
+      - /url: /settings
+  - main [ref=e19]:
+    - heading "📥 Inbox" [level=1] [ref=e187]
+    - paragraph [ref=e188]: Закидывай сюда идеи — потом разберёшь по проектам и горизонтам
+    - generic [ref=e189]:
+      - textbox "Что у тебя на уме? Enter для добавления" [active] [ref=e191]
+      - generic [ref=e194] [cursor=pointer]:
+        - button "Изменить статус" [ref=e195]
+        - generic [ref=e197]: Идея из Inbox
+        - button "Отметить важной" [ref=e198]:
+          - img [ref=e199]
