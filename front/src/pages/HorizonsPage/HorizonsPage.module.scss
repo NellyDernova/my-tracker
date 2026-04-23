@@ -1,0 +1,34 @@
+.hScroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  user-select: none;
+  cursor: grab;
+  flex: 1;
+  display: flex;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:global(.grabbing) {
+    cursor: grabbing;
+  }
+}
+
+.columns {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 8px;
+  flex: 1;
+  align-items: stretch;
+
+  & > * {
+    flex: 0 0 240px;
+  }
+
+  & > .today {
+    flex: 0 0 320px;
+  }
+}

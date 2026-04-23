@@ -1,0 +1,73 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "✦ My Tracker" [ref=e5] [cursor=pointer]
+    - navigation [ref=e6]:
+      - link "📥 Inbox" [ref=e7] [cursor=pointer]:
+        - /url: /inbox
+      - link "🎯 Horizons" [ref=e8] [cursor=pointer]:
+        - /url: /horizons
+      - link "📅 Days" [ref=e9] [cursor=pointer]:
+        - /url: /days
+      - link "🗓 Weeks" [ref=e10] [cursor=pointer]:
+        - /url: /weeks
+      - link "📆 Years" [ref=e11] [cursor=pointer]:
+        - /url: /years
+      - link "🗒 Calendar" [ref=e12] [cursor=pointer]:
+        - /url: /calendar
+    - generic [ref=e14]:
+      - generic [ref=e15]: Projects
+      - button "+" [ref=e16] [cursor=pointer]
+    - link "⚙ Настройки" [ref=e18] [cursor=pointer]:
+      - /url: /settings
+  - main [ref=e19]:
+    - heading "📥 Inbox" [level=1] [ref=e20]
+    - paragraph [ref=e21]: Закидывай сюда идеи — потом разберёшь по проектам и горизонтам
+    - generic [ref=e22]:
+      - textbox "Что у тебя на уме? Enter для добавления" [ref=e24]
+      - generic [ref=e26] [cursor=pointer]:
+        - button "Изменить статус" [ref=e27]
+        - generic [ref=e29]: Первая тестовая идея
+        - button "Отметить важной" [ref=e30]:
+          - img [ref=e31]
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - button "Без проекта ▾" [ref=e39] [cursor=pointer]:
+          - text: Без проекта
+          - generic [ref=e40]: ▾
+        - button "📝 To Do ▾" [ref=e41] [cursor=pointer]:
+          - text: 📝 To Do
+          - generic [ref=e42]: ▾
+      - generic [ref=e43]:
+        - button "Отметить важной" [ref=e44] [cursor=pointer]:
+          - img [ref=e45]
+        - button "✕" [ref=e47] [cursor=pointer]
+    - textbox "Название задачи" [active] [ref=e48]: Первая тестовая идея
+    - generic [ref=e49]:
+      - generic [ref=e50]: Когда
+      - button "Без даты ▾" [ref=e51] [cursor=pointer]:
+        - text: Без даты
+        - generic [ref=e52]: ▾
+    - generic [ref=e53]:
+      - generic [ref=e54]: Повтор
+      - combobox [ref=e55]:
+        - option "Не повторять" [selected]
+        - option "Каждый день"
+        - option "По будням (Пн–Пт)"
+        - option "Раз в неделю (в этот день)"
+        - option "По дням недели"
+        - option "Раз в месяц (в это число)"
+        - option "Раз в год (в этот день)"
+    - generic [ref=e56]:
+      - generic [ref=e57]: Файлы
+      - button "Choose File" [ref=e58]
+    - generic [ref=e59]:
+      - generic [ref=e60]: Подзадачи
+      - textbox "+ Добавить подзадачу (Enter)" [ref=e62]
+    - generic [ref=e63]:
+      - generic [ref=e64]: Описание
+      - textbox "Заметки, детали, ссылки…" [ref=e65]
+    - generic [ref=e66]:
+      - button "Удалить" [ref=e67] [cursor=pointer]
+      - button "Отмена" [ref=e68] [cursor=pointer]
+      - button "Сохранить" [ref=e69] [cursor=pointer]

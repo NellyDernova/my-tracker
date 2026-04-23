@@ -1,0 +1,95 @@
+.dropdown {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
+  padding: 6px;
+  min-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 200;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text);
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--surface-2);
+  }
+
+  &.selected {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+  }
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-soft);
+  margin: 4px 0;
+}
+
+.tag {
+  background: var(--surface-2);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.12s;
+
+  &:hover {
+    background: var(--accent-soft);
+  }
+}
+
+.chev {
+  font-size: 8px;
+  color: var(--text-muted);
+}
+
+.tagProject {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.tagStatusTodo {
+  background: #fbe1ed;
+  color: #b04b79;
+}
+
+.tagStatusInProgress {
+  background: #fff4e0;
+  color: #b9721a;
+}
+
+.tagStatusDone {
+  background: #e2f3dd;
+  color: #4c8f44;
+}
+
+.tagDate {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.tagDateActive {
+  background: var(--accent-soft);
+  color: var(--accent);
+}

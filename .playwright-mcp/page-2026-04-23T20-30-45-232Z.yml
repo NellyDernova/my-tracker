@@ -1,0 +1,89 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "✦ My Tracker" [ref=e5] [cursor=pointer]
+    - navigation [ref=e6]:
+      - link "📥 Inbox" [ref=e7] [cursor=pointer]:
+        - /url: /inbox
+      - link "🎯 Horizons" [ref=e8] [cursor=pointer]:
+        - /url: /horizons
+      - link "📅 Days" [ref=e9] [cursor=pointer]:
+        - /url: /days
+      - link "🗓 Weeks" [ref=e10] [cursor=pointer]:
+        - /url: /weeks
+      - link "📆 Years" [ref=e11] [cursor=pointer]:
+        - /url: /years
+      - link "🗒 Calendar" [ref=e12] [cursor=pointer]:
+        - /url: /calendar
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Projects
+        - button "+" [ref=e16] [cursor=pointer]
+      - link "🎯 Тестовый проект" [ref=e108] [cursor=pointer]:
+        - /url: /project/h_G4z9RssgKo
+        - generic [ref=e109]: 🎯
+        - generic [ref=e110]: Тестовый проект
+    - link "⚙ Настройки" [ref=e18] [cursor=pointer]:
+      - /url: /settings
+  - main [ref=e19]:
+    - generic [ref=e111]:
+      - generic [ref=e112]: 🎯
+      - heading "Тестовый проект" [level=2] [ref=e113]
+      - button "Редактировать" [ref=e114] [cursor=pointer]
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e118]: 📝 To Do
+        - button "Изменить статус 🎯 Тестовый проект Отметить важной" [ref=e130] [cursor=pointer]:
+          - button "Изменить статус" [ref=e131]
+          - generic [ref=e134]: 🎯 Тестовый проект
+          - button "Отметить важной" [ref=e135]:
+            - img [ref=e136]
+        - button "+ Добавить задачу" [ref=e119] [cursor=pointer]
+      - generic [ref=e120]:
+        - generic [ref=e122]: ⚡ In Progress
+        - button "+ Добавить задачу" [ref=e123] [cursor=pointer]
+      - generic [ref=e124]:
+        - generic [ref=e126]: ✅ Done
+        - button "+ Добавить задачу" [ref=e127] [cursor=pointer]
+    - status [ref=e128]
+  - generic [ref=e140]:
+    - generic [ref=e141]:
+      - generic [ref=e143]:
+        - button "🎯 Тестовый проект ▾" [ref=e144] [cursor=pointer]:
+          - text: 🎯 Тестовый проект
+          - generic [ref=e145]: ▾
+        - button "📝 To Do ▾" [ref=e146] [cursor=pointer]:
+          - text: 📝 To Do
+          - generic [ref=e147]: ▾
+      - generic [ref=e148]:
+        - button "Отметить важной" [ref=e149] [cursor=pointer]:
+          - img [ref=e150]
+        - button "✕" [ref=e152] [cursor=pointer]
+    - textbox "Название задачи" [active] [ref=e153]
+    - generic [ref=e154]:
+      - generic [ref=e155]: Когда
+      - button "Без даты ▾" [ref=e156] [cursor=pointer]:
+        - text: Без даты
+        - generic [ref=e157]: ▾
+    - generic [ref=e158]:
+      - generic [ref=e159]: Повтор
+      - combobox [ref=e160]:
+        - option "Не повторять" [selected]
+        - option "Каждый день"
+        - option "По будням (Пн–Пт)"
+        - option "Раз в неделю (в этот день)"
+        - option "По дням недели"
+        - option "Раз в месяц (в это число)"
+        - option "Раз в год (в этот день)"
+    - generic [ref=e161]:
+      - generic [ref=e162]: Файлы
+      - button "Choose File" [ref=e163]
+    - generic [ref=e164]:
+      - generic [ref=e165]: Подзадачи
+      - textbox "+ Добавить подзадачу (Enter)" [ref=e167]
+    - generic [ref=e168]:
+      - generic [ref=e169]: Описание
+      - textbox "Заметки, детали, ссылки…" [ref=e170]
+    - generic [ref=e171]:
+      - button "Удалить" [ref=e172] [cursor=pointer]
+      - button "Отмена" [ref=e173] [cursor=pointer]
+      - button "Сохранить" [ref=e174] [cursor=pointer]

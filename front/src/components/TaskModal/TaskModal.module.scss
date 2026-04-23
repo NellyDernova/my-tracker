@@ -1,0 +1,354 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.backBtn {
+  background: var(--surface-2);
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.headerActions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.fireBtn {
+  background: transparent;
+  border: none;
+  color: #d8d3e4;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s, background 0.15s;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--surface-2);
+    color: var(--fire);
+  }
+
+  &.on {
+    color: var(--fire);
+  }
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: var(--text-muted);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--surface-2);
+  }
+}
+
+.titleInput {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  background: transparent;
+  margin-bottom: 4px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.descInput {
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  resize: vertical;
+  background: var(--bg);
+  font-size: 13px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-soft);
+
+  &Vertical {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+
+    .label {
+      width: auto;
+    }
+  }
+}
+
+.label {
+  width: 110px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  flex-shrink: 0;
+}
+
+.select {
+  flex: 1;
+  padding: 9px 32px 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 13px;
+  color: var(--text);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none' stroke='%239b94b3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+}
+
+.fileInput {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 13px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+}
+
+.weekdaysPicker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: var(--surface-2);
+    cursor: pointer;
+  }
+
+  input {
+    accent-color: var(--accent);
+  }
+}
+
+.attachments {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 8px;
+}
+
+.attachment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.attachmentLink {
+  color: var(--accent);
+  text-decoration: none;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.attachmentSize {
+  color: var(--text-muted);
+}
+
+.attachmentDelete {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+
+  &:hover {
+    color: var(--danger);
+    background: #fbeaea;
+  }
+}
+
+.subtasksSection {
+  padding-top: 12px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.subtasksHeader {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+
+.subtasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.subtaskAdd input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 13px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+    border-style: solid;
+  }
+}
+
+.subtasksHint {
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.tag {
+  background: var(--surface-2);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.12s;
+
+  &:hover {
+    background: var(--accent-soft);
+  }
+
+  &Project {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  &StatusTodo {
+    background: #fbe1ed;
+    color: #b04b79;
+  }
+
+  &StatusInProgress {
+    background: #fff4e0;
+    color: #b9721a;
+  }
+
+  &StatusDone {
+    background: #e2f3dd;
+    color: #4c8f44;
+  }
+
+  &Date {
+    background: var(--surface-2);
+    color: var(--text);
+
+    &HasDate {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+  }
+}
+
+.chev {
+  font-size: 8px;
+  color: var(--text-muted);
+}
