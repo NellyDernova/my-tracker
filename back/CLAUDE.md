@@ -18,7 +18,10 @@ back/
       schema.ts          Drizzle-таблицы + type exports ($inferSelect/$inferInsert)
       client.ts          Database() → drizzle(), WAL + foreign_keys=ON
       migrate.ts         runtime-раннер миграций
-    routes/<entity>.ts   Hono sub-router со всеми CRUD
+    routes/
+      projects.ts        GET/POST/PATCH/DELETE + POST /reorder
+      tasks.ts           GET/:id, GET с фильтрами, POST/PATCH/DELETE + POST /reorder
+      reset.ts           POST /api/reset — чистит всё для userId в транзакции
     middleware/user.ts   ставит c.set('userId', ...)
     lib/id.ts            newId() = nanoid(12)
     env.ts               PORT, DB_PATH, DEFAULT_USER_ID
@@ -28,6 +31,22 @@ back/
   drizzle.config.ts
   tsconfig.json
 ```
+
+## Модель данных
+
+Схема подтянута под фронтовые типы ([front/src/types/index.ts](../front/src/types/index.ts)) — единственный источник правды.
+
+- `projects`: `id`, `userId`, `name`, `description`, `emoji`, `position`, `createdAt`.
+- `tasks`: `id`, `userId`, `projectId` (FK set null), `parentId` (FK cascade — подзадачи), `title`, `description`, `dateType`, `date`, `status`, `repeat`, `repeatDays: number[]` (0-6), `important`, `position`, `createdAt`.
+
+**Enum-значения (валидируются Zod, не в БД):**
+- `dateType`: `'none'|'day'|'week'|'month'|'year'|'life'`
+- `status`: `'todo'|'in-progress'|'done'` (**с дефисом**, не `in_progress`)
+- `repeat`: `'none'|'daily'|'weekdays'|'weekly'|'custom-weekdays'|'monthly'|'yearly'`
+
+**`title` может быть пустым** (`z.string().max(500)` без `.min(1)`) — фронт создаёт задачу пустой и сразу открывает модалку для ввода.
+
+**Attachments на беке нет.** Они хранятся локально на фронте (IDB + Zustand).
 
 ## Правила кода
 
@@ -73,6 +92,8 @@ import { db } from '../db/client.js'; // НЕ .ts, НЕ без расширен�
 
 ## Команды
 
+Требует Node 22 (`nvm use`).
+
 ```bash
 npm run dev            # tsx watch, перезапуск на изменения
 npm run db:generate    # после правки schema.ts → создаёт drizzle/NNNN_*.sql
@@ -80,6 +101,8 @@ npm run db:migrate     # применяет миграции (создаёт/о�
 npm run db:studio      # GUI для БД в браузере
 npx tsc --noEmit       # typecheck без билда
 ```
+
+Если `npm run dev` падает с `NODE_MODULE_VERSION mismatch` — `better-sqlite3` собран под другой Node. Запускай через `nvm use 22` или `npm rebuild better-sqlite3`.
 
 **Поток добавления таблицы/поля:**
 1. правим `src/db/schema.ts`
